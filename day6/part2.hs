@@ -2,14 +2,11 @@
 
 {-# LANGUAGE OverloadedStrings #-}
 
-import System.Environment
 import qualified Data.Set as Set
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 
-main = do
-  args <- getArgs
-  putStrLn $ show $ sumGroupYeses question
+main = putStrLn $ show $ sumGroupYeses question
 
 sumGroupYeses input =
   let
